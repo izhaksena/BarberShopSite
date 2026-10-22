@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#172720">
+	<meta name="description" content="Agende seu próximo corte na Barbearia. Escolha o serviço, profissional e melhor horário.">
+	<title>Barbearia | Seu estilo, nossa paixão</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/lucide@latest"></script>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="topline"><span><i class="icon icon-sm" data-lucide="clock-3"></i> Ter a sáb, das 9h às 20h <span aria-hidden="true">·</span> Rua dos Barbeiros, 125</span></div>
+	<header class="site-header">
+		<div class="wrap header-inner">
+			<a class="brand" href="#inicio" data-view="home" aria-label="Barbearia, página inicial">
+				<span class="brand-mark"><i class="icon" data-lucide="scissors"></i></span>
+				<span class="brand-name">BARBEARIA<small>ESTILO & TRADIÇÃO</small></span>
+			</a>
+			<nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+				<a href="#inicio" data-view="home" class="active">Início</a>
+				<a href="#servicos" data-scroll="servicos">Serviços</a>
+				<a href="#profissionais" data-scroll="profissionais">Profissionais</a>
+				<a href="#sobre" data-scroll="sobre">Sobre</a>
+				<a href="#contato" data-scroll="contato">Contato</a>
+			</nav>
+			<div class="header-actions">
+				<button class="button button-light" data-action="login"><i class="icon icon-sm" data-lucide="user-round"></i> Entrar</button>
+				<button class="user-chip" id="userChip" data-action="dashboard"><span class="avatar" id="userAvatar">JS</span><span id="userName">Cliente</span><i class="icon icon-sm" data-lucide="chevron-down"></i></button>
+				<button class="button button-dark" data-view="booking"><i class="icon icon-sm" data-lucide="calendar-plus"></i> Agendar</button>
+				<button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu" aria-expanded="false"><i class="icon" data-lucide="menu"></i></button>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="view active" id="view-home">
+			<section class="hero">
+				<img class="hero-image" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=90" alt="Interior de uma barbearia clássica" fetchpriority="high">
+				<div class="hero-content">
+					<span class="eyebrow">Desde 2014 · Belo Horizonte</span>
+					<h1>Seu estilo,<br><em>nossa paixão.</em></h1>
+					<p class="hero-copy">Mais do que um corte. Um momento seu, com técnica, cuidado e a conversa que faz bem.</p>
+					<div class="hero-actions"><button class="button button-lime" data-view="booking">Escolher meu horário <i class="icon icon-sm" data-lucide="arrow-up-right"></i></button><a class="hero-link" href="#servicos" data-scroll="servicos">Conheça os serviços <i class="icon icon-sm" data-lucide="arrow-down"></i></a></div>
+					<div class="hero-note"><div class="avatar-stack"><span>MA</span><span>LC</span><span>JP</span><span>+8</span></div><span><strong>12 profissionais</strong><br>prontos para receber você</span></div>
+				</div>
+			</section>
+			<section class="trust-strip"><div class="wrap trust-inner">
+				<div class="trust-item"><i class="icon" data-lucide="calendar-check-2"></i><span><strong>Agendamento fácil</strong>Escolha seu horário online</span></div>
+				<div class="trust-item"><i class="icon" data-lucide="badge-check"></i><span><strong>Profissionais experientes</strong>Trabalho feito com cuidado</span></div>
+				<div class="trust-item"><i class="icon" data-lucide="map-pin"></i><span><strong>Bem no centro</strong>Fácil de chegar, bom de ficar</span></div>
+				<div class="trust-item"><i class="icon" data-lucide="star"></i><span><strong>4,9 de avaliação</strong>Mais de 800 clientes atendidos</span></div>
+			</div></section>
+			<section class="section" id="servicos"><div class="wrap">
+				<div class="section-top"><div><div class="section-kicker">O que fazemos</div><h2>Um bom cuidado<br>começa pelo detalhe.</h2><p class="section-desc">Serviços pensados para você sair daqui se sentindo bem. Escolha o seu e reserve um horário.</p></div><button class="button button-light" data-view="booking">Ver horários <i class="icon icon-sm" data-lucide="arrow-right"></i></button></div>
+				<div class="service-grid" id="homeServices"></div>
+			</div></section>
+			<section class="feature-band" id="sobre">
+				<img class="feature-image" src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=85" alt="Barbeiro cuidando dos detalhes de um corte" loading="lazy">
+				<div class="feature-copy"><div class="section-kicker" style="color:var(--lime)">A casa é sua</div><h2>Uma pausa na correria.<br>Um corte à sua altura.</h2><p>A gente acredita que o melhor resultado vem de ouvir primeiro. Aqui, cada atendimento tem tempo, atenção e um profissional que entende o que combina com você.</p><ul class="feature-list"><li><i class="icon icon-sm" data-lucide="check"></i> Atendimento com hora marcada</li><li><i class="icon icon-sm" data-lucide="check"></i> Produtos selecionados para cada tipo de cabelo</li><li><i class="icon icon-sm" data-lucide="check"></i> Um espaço confortável, sem pressa</li></ul><button class="button button-lime" data-view="booking">Venha conhecer <i class="icon icon-sm" data-lucide="arrow-up-right"></i></button></div>
+			</section>
+			<section class="section section-white" id="profissionais"><div class="wrap"><div class="section-top"><div><div class="section-kicker">Quem cuida de você</div><h2>Boas mãos. Boa conversa.</h2><p class="section-desc">Gente que gosta do que faz e sabe que cada cliente tem seu próprio estilo.</p></div><button class="button button-light" data-view="booking">Agendar com a equipe <i class="icon icon-sm" data-lucide="arrow-right"></i></button></div><div class="barber-grid" id="homeBarbers"></div></div></section>
+		</section>
+
+		<section class="view" id="view-booking"><div class="wrap booking-page">
+			<div class="page-heading"><div class="section-kicker">Reserva online</div><h1>Seu próximo horário começa aqui.</h1><p>Escolha o serviço, o profissional e o melhor momento para você.</p></div>
+			<div class="booking-layout">
+				<div class="booking-main"><div class="stepper" id="bookingStepper"></div><div class="step-content" id="bookingStepContent"></div><div class="booking-actions"><button class="button button-text" id="bookingBack"><i class="icon icon-sm" data-lucide="arrow-left"></i> Voltar</button><button class="button button-dark" id="bookingNext">Continuar <i class="icon icon-sm" data-lucide="arrow-right"></i></button></div></div>
+				<aside class="summary-card"><h3>Resumo do agendamento</h3><img class="summary-service-img" id="summaryImage" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=75" alt="Serviço escolhido"><p class="summary-label"><span>Serviço</span><strong id="summaryService">Selecione um serviço</strong></p><p class="summary-label"><span>Profissional</span><strong id="summaryBarber">A escolher</strong></p><p class="summary-label"><span>Data e horário</span><strong id="summaryDate">A escolher</strong></p><div class="summary-total"><span>Valor</span><strong id="summaryPrice">R$ 0,00</strong></div><div class="secure-note"><i class="icon icon-sm" data-lucide="shield-check"></i> Seus dados são usados apenas para organizar seu atendimento.</div></aside>
+			</div><p class="notice">Protótipo acadêmico: os dados são demonstrativos e ficam salvos apenas neste navegador.</p>
+		</div></section>
+
+		<section class="view" id="view-login"><div class="login-page"><div class="login-shell">
+			<div class="login-aside"><a class="brand" href="#inicio" data-view="home"><span class="brand-mark"><i class="icon" data-lucide="scissors"></i></span><span class="brand-name" style="color:white">BARBEARIA<small style="color:rgba(255,255,255,.62)">ESTILO & TRADIÇÃO</small></span></a><div><h2>Bom ter você por aqui.</h2><p>Entre na sua conta e deixe a gente cuidar do resto.</p></div></div>
+			<form class="login-form" id="loginForm"><h1>Acesse sua conta</h1><p>Entre para acompanhar seus horários.</p><div class="role-tabs" id="roleTabs"><button type="button" class="role-tab selected" data-role="cliente">Cliente</button><button type="button" class="role-tab" data-role="barbeiro">Barbeiro</button><button type="button" class="role-tab" data-role="gestor">Gestor</button></div><div class="login-fields"><label class="field">E-mail<input type="email" id="loginEmail" placeholder="voce@email.com" required autocomplete="email"></label><label class="field">Senha<span class="password-wrap"><input type="password" id="loginPassword" placeholder="Sua senha" required autocomplete="current-password"><button type="button" class="password-toggle" id="passwordToggle" aria-label="Mostrar senha"><i class="icon icon-sm" data-lucide="eye"></i></button></span></label></div><button class="button button-dark login-submit" type="submit">Entrar <i class="icon icon-sm" data-lucide="arrow-right"></i></button><div class="demo-hint">Modo de demonstração: informe qualquer e-mail e senha para acessar o painel selecionado.</div><div class="login-bottom"><span>Novo por aqui? <button type="button" class="link-button" data-action="register">Criar conta</button></span><button type="button" class="link-button" data-action="forgot">Esqueci minha senha</button></div></form>
+		</div></div></section>
+
+		<section class="view" id="view-dashboard"><div class="wrap dashboard"><div class="dashboard-head"><div><div class="section-kicker" id="dashboardKicker">Sua área</div><h1 id="dashboardTitle">Meus agendamentos</h1><p id="dashboardSubtitle">Acompanhe seus próximos momentos na barbearia.</p></div><div class="dashboard-tools"><button class="button button-light" data-action="logout"><i class="icon icon-sm" data-lucide="log-out"></i> Sair</button><button class="button button-dark" data-view="booking"><i class="icon icon-sm" data-lucide="plus"></i> Novo agendamento</button></div></div><div class="dashboard-grid"><aside class="side-menu" id="sideMenu"></aside><div class="dash-content" id="dashboardContent"></div></div></div></section>
+	</main>
+
+	<footer class="footer" id="contato"><div class="wrap"><div class="footer-main"><div class="footer-about"><a class="brand" href="#inicio" data-view="home"><span class="brand-mark"><i class="icon" data-lucide="scissors"></i></span><span class="brand-name" style="color:white">BARBEARIA<small style="color:rgba(255,255,255,.62)">ESTILO & TRADIÇÃO</small></span></a><p>Um espaço para cuidar do visual, encontrar os amigos e sair de bem com o espelho.</p></div><div class="footer-links"><div><h3>Encontre a gente</h3><span>Rua dos Barbeiros, 125</span><span>Centro · Belo Horizonte, MG</span><span>(31) 3333-2040</span></div><div><h3>Funcionamento</h3><span>Terça a sexta · 9h às 20h</span><span>Sábado · 9h às 18h</span><span>Domingo e segunda · fechado</span></div><div><h3>Atalhos</h3><a href="#servicos" data-scroll="servicos">Serviços</a><a href="#profissionais" data-scroll="profissionais">Profissionais</a><a href="#inicio" data-view="booking">Agendar horário</a></div></div></div><div class="footer-bottom"><span>© 2026 Barbearia. Projeto acadêmico demonstrativo.</span><span>Feito com cuidado em Belo Horizonte.</span></div></div></footer>
+
+	<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><div class="modal-head"><h2 id="modalTitle">Cancelar agendamento?</h2><button class="modal-close" data-action="close-modal" aria-label="Fechar"><i class="icon icon-sm" data-lucide="x"></i></button></div><p id="modalText">Esta ação não pode ser desfeita.</p><div class="modal-actions"><button class="button button-light" data-action="close-modal">Voltar</button><button class="button button-dark" id="modalConfirm">Confirmar</button></div></div></div>
+	<div class="toast" id="toast"><i class="icon icon-sm" data-lucide="circle-check"></i><span id="toastMessage"></span></div>
+
+	<script src="./JavaScript.js" defer></script>
+</body>
+</html>
