@@ -1,0 +1,75 @@
+{
+  "site": {
+    "nome": "Barbearia",
+    "slogan": "Seu estilo, nossa paixão.",
+    "subtitulo": "Estilo & Tradição",
+    "fundadaEm": 2014,
+    "cidade": "Belo Horizonte",
+    "endereco": "Rua dos Barbeiros, 125",
+    "telefone": "(31) 3333-2040",
+    "horario": {
+      "tercaASexta": "9h às 20h",
+      "sabado": "9h às 18h",
+      "domingoESegunda": "Fechado"
+    },
+    "avaliacao": 4.9,
+    "clientesAtendidos": 800
+  },
+  "servicos": [
+    {
+      "id": "corte",
+      "nome": "Corte masculino",
+      "descricao": "Clássico, degradê ou do seu jeito.",
+      "preco": 45,
+      "duracaoMinutos": 45,
+      "imagem": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=750&q=80"
+    },
+    {
+      "id": "barba",
+      "nome": "Barba",
+      "descricao": "Desenho, toalha quente e cuidado.",
+      "preco": 30,
+      "duracaoMinutos": 30,
+      "imagem": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=750&q=80"
+    },
+    {
+      "id": "combo",
+      "nome": "Corte + barba",
+      "descricao": "O cuidado completo, sem pressa.",
+      "preco": 68,
+      "duracaoMinutos": 75,
+      "imagem": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=750&q=80"
+    },
+    {
+      "id": "sobrancelha",
+      "nome": "Sobrancelha",
+      "descricao": "Acabamento natural e preciso.",
+      "preco": 20,
+      "duracaoMinutos": 20,
+      "imagem": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=750&q=80"
+    }
+  ],
+  "profissionais": [
+    {
+      "id": "joao",
+      "nome": "João Silva",
+      "especialidade": "Cortes clássicos e degradê",
+      "avaliacao": 4.9,
+      "imagem": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=180&q=80"
+    },
+    {
+      "id": "carlos",
+      "nome": "Carlos Lima",
+      "especialidade": "Barba e visagismo",
+      "avaliacao": 5,
+      "imagem": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=180&q=80"
+    },
+    {
+      "id": "pedro",
+      "nome": "Pedro Santos",
+      "especialidade": "Cortes modernos",
+      "avaliacao": 4.8,
+      "imagem": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=180&q=80"
+    }
+  ]
+}
